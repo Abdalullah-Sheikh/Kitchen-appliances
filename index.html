@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <!-- <link rel="shortcut icon" href="images/star.png" type="favicon/ico" /> -->
+
+        <title>Kitchen Appliances</title>
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/owl.carousel.css">
+        <link rel="stylesheet" href="css/owl.theme.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/flexslider.css">
+        <link rel="stylesheet" href="css/pricing.css">
+        <link rel="stylesheet" href="css/main.css">
+
+
+        <script src="js/jquery-1.11.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery.flexslider.min.js"></script>
+        <script type="text/javascript">
+            $(window).load(function() {
+                $('.flexslider').flexslider({
+                 animation: "slide",
+                 controlsContainer: ".flexslider-container"
+                });
+            });
+        </script>
+
+        <script src="https://maps.googleapis.com/maps/api/js"></script>
+        <script>
+            function initialize() {
+                var mapCanvas = document.getElementById('map-canvas');
+                var mapOptions = {
+                    center: new google.maps.LatLng(24.8607, 67.0011),
+                    zoom: 16,
+                    scrollwheel: false,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                }
+                var map = new google.maps.Map(mapCanvas, mapOptions)
+
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(24.8607, 67.0011),
+                    title:"karachi"
+                });
+
+                // To add the marker to the map, call setMap();
+                marker.setMap(map);
+            }
+            google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
+
+
+    </head>
+    <body data-spy="scroll" data-target="#template-navbar">
+
+        <!--== 4. Navigation ==-->
+        <nav id="template-navbar" class="navbar navbar-default custom-navbar-default navbar-fixed-top">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#Food-fair-toggle">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <img id="10" src="images/10.jpg" class="logo img-responsive">
+                    </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="Food-fair-toggle">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#about">about</a></li>
+                        <li><a href="#pricing">pricing</a></li>
+                        <li><a href="#great-place-to-enjoy">Products</a></li>
+                        <li><a href="#breakfast">Brands</a></li>
+                        <li><a href="#featured-dish">Sales</a></li>
+                        <li><a href="#reserve">New Arrival</a></li>
+                        <li><a href="#contact">contact</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.row -->
+        </nav>
+
+
+        <!--== 5. Header ==-->
+        <section id="header-slider" class="owl-carousel">
+            <div class="item">
+                <div class="container">
+                    <div class="header-content">
+                        <h1 class="header-title"></h1>
+                        <p class="header-sub-title"> </p>
+                    </div> <!-- /.header-content -->
+                </div>
+            </div>
+            <div class="item">
+                <div class="container">
+                    <div class="header-content">
+                        <h1 class="header-title"></h1>
+                        <p class="header-sub-title"> </p>
+                    </div> <!-- /.header-content -->
+                </div>
+            </div>
+            <div class="item">
+                <div class="container">
+                    <div class="header-content text-right pull-right">
+                        <h1 class="header-title"></h1>
+                        <p class="header-sub-title"> </p>
+                    </div> <!-- /.header-content -->
+                </div>
+            </div>
+        </section>
+
+
+
+        <!--== 6. About us ==-->
+        <section id="about" class="about">
+            <div class="wrapper">
+                <div class="container-fluid">
+                    <div class="row dis-table">
+                        <div class="hidden-xs col-sm-6 section-bg about-bg dis-table-cell">
+
+                        </div>
+                        <div class="col-xs-12 col-sm-6 dis-table-cell">
+                            <div class="section-content">
+                                <h2 class="section-content-title">About us</h2>
+                                <p class="section-content-para">
+                                    Kitchen appliances- the home store is Branded Company famous for home kitchen appliances.
+                                     It provides collection of n number of appliances with different category to match the fast life of the generation. 
+                                     The KA group of companies had made huge profit in the year 2013. In order to enhance its business the organization wants you to develop the website.
+                                </p>
+                            </div> <!-- /.section-content -->
+                        </div>
+                    </div> <!-- /.row -->
+                </div> <!-- /.container-fluid -->
+            </div> <!-- /.wrapper -->
+        </section> <!-- /#about -->
+
+
+        <!--==  7. Afordable Pricing  ==-->
+        <section id="pricing" class="pricing">
+            <div id="w">
+                <div class="pricing-filter">
+                    <div class="pricing-filter-wrapper">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-10 col-md-offset-1">
+                                    <div class="section-header">
+                                        <h2 class="pricing-title">Affordable Pricing</h2>
+                                        <ul id="filter-list" class="clearfix">
+                                            <li class="filter" data-filter="all">All</li>
+                                            
+                                        </ul><!-- @end #filter-list -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row">  
+                        <div class="col-md-10 col-md-offset-1">
+                            <ul id="menu-pricing" class="menu-price">
+                                <li class="item dinner">
+
+                                    <a href="#">
+                                        <img src="images/cookware.jpg" class="img-responsive" alt="" >
+                                        <div class="menu-desc text-center">
+                                            <span>
+                                                <h3>Cookware Set</h3>
+                                                Stainless Steel 
+                                            </span>
+                                        </div>
+                                    </a>
+                                        
+                                    <h2 class="white">Rs 2000</h2>
+                                </li>
+
+                                <li class="item breakfast">
+
+                                    <a href="#">
+                                        <img src="images/cookware2.jpg" class="img-responsive" alt="" >
+                                        <div class="menu-desc">
+                                            <span>
+                                                <h3>Dinner Set</h3>
+                                                72 Pcs Dinner Set in Unique design
+                                            </span>
+                                        </div>
+                                    </a>
+                                        
+                                    <h2 class="white">Rs 5000</h2>
+                                </li>
+                                <li class="item desert">
+
+                                    <a href="#">
+                                        <img src="images/cookware3.jpg" class="img-responsive" alt="" >
+                                        <div class="menu-desc">
+                                            <span>
+                                                <h3>Spices Jar Set</h3>
+                                                
+                                            </span>
+                                        </div>
+                                    </a>
+                                        
+                                    <h2 class="white">Rs 1500</h2>
+                                </li>
+                                <li class="item breakfast special">
+
+                                    <a href="#">
+                                        <img src="images/cookware4.jfif" class="img-responsive" alt="" >
+                                        <div class="menu-desc">
+                                            <span>
+                                                <h3>Lunch box and Bottle</h3>
+                                                Stainless Steel
+                                            </span>
+                                        </div>
+                                    </a>
+                                        
+                                    <h2 class="white">Rs 900</h2>
+                                </li>
+                                <li class="item breakfast">
+
+                                    <a href="#">
+                                        <img src="images/cookware5.jpg" class="img-responsive" alt="" >
+                                        <div class="menu-desc">
+                                            <span>
+                                                <h3>Dawlance</h3>
+                                                Available in all design and different prices
+                                            </span>
+                                        </div>
+                                    </a>
+                                        
+                                    <h2 class="white">Rs 67,000</h2>
+                                </li>
+                                <li class="item dinner special">
+
+                                    <a href="#">
+                                        <img src="images/cookware6.jfif" class="img-responsive" alt="" >
+                                        <div class="menu-desc">
+                                            <span>
+                                                <h3>Frying pans</h3>
+                                                Almo The Triple Threat 3 Piece Stainless Steel Frying Pan Set
+                                            </span>
+                                        </div>
+                                    </a>
+
+                                    <h2 class="white">Rs 1,000</h2>
+                                </li>
+                                <li class="item desert">
+
+                                    <a href="#">
+                                        <img src="images/cookware7.jpg" class="img-responsive" alt="" >
+                                        <div class="menu-desc">
+                                            <span>
+                                                <h3>Blender & Chopper and Grinder</h3>
+                                                Shop now 
+                                            </span>
+                                        </div>
+                                    </a>
+
+                                    <h2 class="white">Rs 3,000</h2>
+                                </li>
+                                <li class="item dinner">
+
+                                    <a href="#">
+                                        <img src="images/cookware8.jfif" class="img-responsive" alt="" >
+                                        <div class="menu-desc">
+                                            <span>
+                                                <h3>Toaster</h3>
+                                                Brand new
+                                            </span>
+                                        </div>
+                                    </a>
+
+                                    <h2 class="white">Rs 2,000</h2>
+                                </li>
+                                <li class="item desert special">
+
+                                    <a href="#">
+                                        <img src="images/cookware9.jpg" class="img-responsive" alt="" >
+                                        <div class="menu-desc">
+                                            <span>
+                                                <h3>Tea Set</h3>
+                                                6pcs tea set
+                                            </span>
+                                        </div>
+                                    </a>
+                                    
+                                    <h2 class="white">Rs 530</h2>
+                                </li>  
+
+                                <li class="item desert special">
+
+                                    <a href="#">
+                                        <img src="images/cookware10.png" class="img-responsive" alt="" >
+                                        <div class="menu-desc">
+                                            <span>
+                                                <h3>Cooking Range</h3>
+                                                best brand
+                                            </span>
+                                        </div>
+                                    </a>
+                                    
+                                    <h2 class="white">Rs 10,000</h2>
+                                </li> 
+
+                                <li class="item desert special">
+
+                                    <a href="#">
+                                        <img src="images/cookware11.jfif" class="img-responsive" alt="" >
+                                        <div class="menu-desc">
+                                            <span>
+                                                <h3>Stove</h3>
+                                                Burner
+                                            </span>
+                                        </div>
+                                    </a>
+                                    
+                                    <h2 class="white">Rs 2,000</h2>
+                                </li> 
+
+                                <li class="item desert special">
+
+                                    <a href="#">
+                                        <img src="images/cookware12.jpg" class="img-responsive" alt="" >
+                                        <div class="menu-desc">
+                                            <span>
+                                                <h3>Food Factory</h3>
+                                                Unique design
+                                            </span>
+                                        </div>
+                                    </a>
+                                    
+                                    <h2 class="white">Rs  4,000</h2>
+                                </li> 
+
+                                <li class="item desert special">
+
+                                    <a href="#">
+                                        <img src="images/cookware13.jpg" class="img-responsive" alt="" >
+                                        <div class="menu-desc">
+                                            <span>
+                                                <h3>80 Piece Kitchen Starter Pots,
+                                                     Pans </h3>
+                                                     and Utensils Combo
+                                            </span>
+                                        </div>
+                                    </a>
+                                    
+                                    <h2 class="white">Rs 2,500</h2>
+                                </li> 
+
+                                <li class="item desert special">
+
+                                    <a href="#">
+                                        <img src="images/cookware14.jfif" class="img-responsive" alt="" >
+                                        <div class="menu-desc">
+                                            <span>
+                                                <h3>NutriChef Metallic Nonstick Ceramic
+                                                    Cooking Kitchen Cookware Pots and
+                                                    Pan Baking Set with Lids and Utensils, 
+                                                    20 Piece Set, Bronze</h3>
+                                                
+                                            </span>
+                                        </div>
+                                    </a>
+                                    
+                                    <h2 class="white">Rs 2,500</h2>
+                                </li> 
+
+                                <li class="item desert special">
+
+                                    <a href="#">
+                                        <img src="images/cookware15.jpeg" class="img-responsive" alt="" >
+                                        <div class="menu-desc">
+                                            <span>
+                                                <h3>Prestige Deluxe Stainless Steel
+                                                 Pressure Cooker - 6 Liter
+                                                </h3>
+                                                
+                                            </span>
+                                        </div>
+                                    </a>
+                                    
+                                    <h2 class="white">Rs 6,800</h2>
+                                </li> 
+
+                                <li class="item desert special">
+
+                                    <a href="#">
+                                        <img src="images/cookware16.jpg" class="img-responsive" alt="" >
+                                        <div class="menu-desc">
+                                            <span>
+                                                <h3>Non Stick Double Sided Grill Pan 
+                                                - Original Italy - 36Cm</h3>
+                                                
+                                            </span>
+                                        </div>
+                                    </a>
+                                    
+                                    <h2 class="white">Rs 2,700</h2>
+                                </li> 
+
+                                <li class="item desert special">
+
+                                    <a href="#">
+                                        <img src="images/cookware17.jpg" class="img-responsive" alt="" >
+                                        <div class="menu-desc">
+                                            <span>
+                                                <h3>Pack of 3 Karahi Get Pack of 3 Non-Stick
+                                                     Karahi and prepare delicious food 
+                                                  </h3>
+                                                
+                                            </span>
+                                        </div>
+                                    </a>
+                                    
+                                    <h2 class="white">Rs 3,500</h2>
+                                </li> 
+
+                                <li class="item desert special">
+
+                                    <a href="#">
+                                        <img src="images/jug.jpg" class="img-responsive" alt="" >
+                                        <div class="menu-desc">
+                                            <span>
+                                                <h3>Water Set (7 pieces)</h3>
+                                                
+                                            </span>
+                                        </div>
+                                    </a>
+                                    
+                                    <h2 class="white">Rs 1,099</h2>
+                                </li> 
+
+                                <li class="item desert special">
+
+                                    <a href="#">
+                                        <img src="images/n.jpg" class="img-responsive" alt="" >
+                                        <div class="menu-desc">
+                                            <span>
+                                                <h3>WOODEN REVOLVING MASALA 
+                                                    JAR SET 16 PCS</h3>
+                                                SALE!!!
+                                            </span>
+                                        </div>
+                                    </a>
+                                    
+                                    <h2 class="white">Rs 3,500</h2>
+                                </li> 
+
+                                <li class="item desert special">
+
+                                    <a href="#">
+                                        <img src="images/cookware18.jpg" class="img-responsive" alt="" >
+                                        <div class="menu-desc">
+                                            <span>
+                                                <h3>Classic Essentials Stainless Steel Handi Set
+                                                10-Pieces, Blue</h3>
+                                                
+                                            </span>
+                                        </div>
+                                    </a>
+                                    
+                                    <h2 class="white">Rs 8,329</h2>
+                                </li> 
+
+                                <li class="item desert special">
+
+                                    <a href="#">
+                                        <img src="images/cookware19.jpg" class="img-responsive" alt="" >
+                                        <div class="menu-desc">
+                                            <span>
+                                                <h3>
+                                                    Royal Pakistan Tea Tet Flower Design Metal
+                                                     Ceramic Porcelain Arabic Tea Cup Se</h3>
+                                                
+                                            </span>
+                                        </div>
+                                    </a>
+                                    
+                                    <h2 class="white">Rs 2,500</h2>
+                                </li> 
+
+                                <li class="item desert special">
+
+                                    <a href="#">
+                                        <img src="images/custard.jpg" class="img-responsive" alt="" >
+                                        <div class="menu-desc">
+                                            <span>
+                                                <h3>Custard Argonaut Shell Master Berry 
+                                                    Set ~ 7 Pieces</h3>
+                                                
+                                            </span>
+                                        </div>
+                                    </a>
+                                    
+                                    <h2 class="white">Rs 3,000</h2>
+                                </li> 
+
+                                <li class="item desert special">
+
+                                    <a href="#">
+                                        <img src="images/ice.jpg" class="img-responsive" alt="" >
+                                        <div class="menu-desc">
+                                            <span>
+                                                <h3>Ice Cream Crystal Set</h3>
+                                                6pcs And on Bowl
+                                            </span>
+                                        </div>
+                                    </a>
+                                    
+                                    <h2 class="white">Rs 2,000</h2>
+                                </li> 
+
+
+                            </ul>
+                            
+                        </div>   
+                    </div>
+                </div>
+
+            </div> 
+        </section>
+
+
+        <!--== 8. Great Place to enjoy ==-->
+        <section id="great-place-to-enjoy" class="great-place-to-enjoy">
+            <div class="wrapper">
+                <div class="container-fluid">
+                    <div class="row dis-table">
+                        <div class="col-xs-6 col-sm-6 dis-table-cell color-bg">
+                            <h2 class="section-title">Great Place to enjoy</h2>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 dis-table-cell section-bg">
+                            
+                        </div>
+                    </div> <!-- /.dis-table -->
+                </div> <!-- /.row -->
+            </div> <!-- /.wrapper -->
+        </section> <!-- /#great-place-to-enjoy -->
+
+
+
+        <!--==  9. Our Beer  ==-->
+        <section id="beer" class="beer">
+            <div class="container-fluid">
+                <div class="row dis-table">
+                    <div class="hidden-xs col-sm-6 dis-table-cell section-bg">
+
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 dis-table-cell">
+                        <div class="section-content">
+                            <h2 class="section-content-title">Our Story</h2>
+                            <div class="section-description">
+                                <p class="section-content-para">
+                                    Our Story
+                                    The dream of Anex came true under the name of Kashif Electronics in December 1978. After trading for approximately a decade, we distributed electronic itemsin Pakistan’s market for 10 years.
+                                    
+                                    Anex was launched in Pakistan in 1999. It will not be wrong to say that we proudly introduced the concept of product Warranty & Guarantee & we tried our best to provide the best quality and after sales services in minimal prices. We started off with introducing 10 products in the market and we are proud to say that today Anex offers close to 200 Home & Kitchen appliances products in the market. The quality, reliability & after sales service is what makes Anex one of the leading brands in Pakistan.
+                                    
+                                    We have also started a manufacturing plant for Washing Machines & been manufacturing and distributing washing machines for a year now.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!--== 10. Our Breakfast Menu ==-->
+        <section id="breakfast" class="breakfast">
+            <div class="wrapper">
+                <div class="container-fluid">
+                    <div class="row dis-table">
+                        <div class="col-xs-6 col-sm-6 dis-table-cell color-bg">
+                            <h2 class="section-title">BEST DEALS OF THIS YEAR</h2>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 dis-table-cell section-bg">
+                            
+                        </div>
+                    </div> <!-- /.dis-table -->
+                </div> <!-- /.row -->
+            </div> <!-- /.wrapper -->
+        </section> <!-- /#breakfast -->
+
+
+
+        <!--== 11. Our Bread ==-->
+        <section id="bread" class="bread">
+            <div class="container-fluid">
+                <div class="row dis-table">
+                    <div class="hidden-xs col-sm-6 dis-table-cell section-bg">
+
+                    </div>
+                    <div class="col-xs-12 col-sm-6 dis-table-cell">
+                        <div class="section-content">
+                            <h2 class="section-content-title">
+                                Our Deals
+                            </h2>
+                            <div class="section-description">
+                                <p class="section-content-para">
+                                   Limiated offers shop now
+                                   Limiated offers shop now There's not any better way than to get started shopping for the stove. 
+                                   If it comes to single door refrigerators, you are certain going to be awestruck with the wonderful number of alternatives available out there. 
+                                   These days,everybody wants to decorate his kitchen just enjoy the bedroom and living room.
+
+
+                                </p>
+                                <p class="section-content-para">
+                                    Even when you should purchase a food processor, you may have to purchase a blender or a mixer grinder again.
+                                     Hand blender is the perfect kitchen tool that can be used for easy and quick blending, mixing, whisking and chopping operations. 
+                                     If you're too much into baking, go for a mixer which lets you prepare a whole lot of dough in 1 go
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="featured-dish" class="featured-dish">
+            <div class="wrapper">
+                <div class="container-fluid">
+                    <div class="row dis-table">
+                        <div class="col-xs-6 col-sm-6 dis-table-cell color-bg">
+                            <h2 class="section-title">Our Most Sold Item</h2>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 dis-table-cell section-bg">
+                            
+                        </div>
+                    </div> 
+                </div>
+                </div>
+        </section> 
+  <!--== 13. Menu List ==-->
+        <section id="menu-list" class="menu-list">
+            <div class="container">
+                <div class="row menu">
+                    <div class="col-md-10 col-md-offset-1 col-sm-9 col-sm-offset-2 col-xs-12">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6 col-xs-12">
+                                <div class="row">
+                                    <div class="menu-catagory">
+                                        <h2>Cookware:
+                                        </h2>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="menu-item">
+                                        <h3 class="menu-title">Cooking pots
+                                        </h3>
+                                        <p class="menu-about">Cooking Pans</p>
+
+                                        <div class="menu-system">
+                                          
+                                            <div class="half">
+                                                <p class="price">RS 2,000 TO 6,000</p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="menu-item">
+                                        <h3 class="menu-title">Frying Pans</h3>
+
+                                        <p class="menu-about">Cookware Sets</p>
+
+                                        <div class="menu-system">
+                                         
+                                            <div class="half">
+                                                <p class="price">RS 1,000 TO 6,000 </p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="menu-item">
+                                        <h3 class="menu-title">Handis Kadais
+                                            [Karahi] Grill pans Tawas  
+                                        </h3>
+                                        <p class="menu-about">Egg Poachers 
+                                        and    Steamers   </p>
+
+                                        <div class="menu-system">
+                                            
+                                            <div class="half">
+                                                <p class="price">RS 1,000 TO 6,000 </p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 col-sm-6 col-xs-12">
+                                <div class="row">
+                                    <div class="menu-catagory">
+                                        <h2>Appliances </h2>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="menu-item">
+                                        <h3 class="menu-title">Blenders</h3>
+                                        <p class="menu-about">Food Choppers</p>
+
+                                        <div class="menu-system">
+                                            
+                                            <div class="half">
+                                                <p class="price">RS 2,000 TO 6,500 </p>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="menu-item">
+                                        <h3 class="menu-title">Bread Makers  </h3>
+                                        <p class="menu-about">Toasters</p>
+
+                                        <div class="menu-system">
+                    
+                                            <div class="half">
+                                                <p class="price">RS 3,000 TO 8,000</p> 
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="menu-item">
+                                        <h3 class="menu-title">Coffee Makers 
+                                        Electric Kettles</h3>
+                                        <p class="menu-about">Ice-Cream and sorbet makers</p>
+
+                                        <div class="menu-system">
+                                           
+                                            <div class="half">
+                                                <p class="price">RS 4,000 TO 8,000</p> 
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 col-sm-6 col-xs-12">
+                                <div class="row">
+                                    <div class="menu-catagory">
+                                        <h2>Food Storage</h2>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="menu-item">
+                                        <h3 class="menu-title">Flask, 
+                                            Spice Jars </h3>
+                                        <p class="menu-about">Storage Bags</p>
+
+                                        <div class="menu-system">
+                                            
+                                            <div class="half">
+                                                <p class="price">RS 1,000 TO 2,500</p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="menu-item">
+                                        <h3 class="menu-title">Lunch Boxes</h3>
+                                        <p class="menu-about">Vacuum bottles.</p>
+
+                                        <div class="menu-system">
+                                          
+                                            <div class="half">
+                                                <p class="price">RS 1,000 TO 2,500</p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="menu-item">
+                                        <h3 class="menu-title">DinnerSets </h3>
+                                        <p class="menu-about">TeaSets And so on</p>
+
+                                        <div class="menu-system">
+                                          
+                                            <div class="half">
+                                                <p class="price">RS 4,000 TO 10,000</p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 col-sm-6 col-xs-12">
+                                <div class="row">
+                                    <div class="menu-catagory">
+                                        <h2>Refrigeration</h2>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="menu-item">
+                                        <h3 class="menu-title">Freezers</h3>
+                                        <p class="menu-about"></p>
+
+                                        <div class="menu-system">
+                                          
+                                            <div class="half">
+                                                <p class="price">RS 47,000 TO 67,000</p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="menu-item">
+                                        <h3 class="menu-title">Refrigerators</h3>
+                                        <p class="menu-about">best brands</p>
+
+                                        <div class="menu-system">
+                                           
+                                            <div class="half">
+                                                <p class="price">RS 47,000 TO 67,000</p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+        </section>
+
+        <section id="have-a-look" class="have-a-look hidden-xs">
+            <div class="wrapper">
+                <div class="container-fluid">
+                    <div class="row">
+
+                        <div class="menu-gallery" style="width: 50%; float:left;">
+                            <div class="flexslider-container">
+                                <div class="flexslider">
+                                    <ul class="slides">
+                                        <li>
+                                            <img src="images/menu-gallery/dw.png" />
+                                        </li>
+                                        <li>
+                                            <img src="images/menu-gallery/zw.jpg" />
+                                        </li>
+                                        <li>
+                                            <img src="images/menu-gallery/kw.png" />
+                                        </li>
+                                        <li>
+                                            <img src="images/menu-gallery/ww.jpg" />
+                                        </li>
+                                        <li>
+                                            <img src="images/menu-gallery/ww1.jpg" />
+                                        </li>
+                                        <li>
+                                            <img src="images/menu-gallery/gw.jpg" />
+                                        </li>
+                                        <li>
+                                            <img src="images/menu-gallery/tw.jpg" />
+                                        </li>
+                                        <li>
+                                            <img src="images/menu-gallery/fn.jpg" />
+                                        </li>
+                                        <li>
+                                            <img src="images/menu-gallery/bw.jpg" />
+                                        </li>
+                                        <li>
+                                            <img src="images/menu-gallery/m.jpg" />
+                                        </li>
+                                        <li>
+                                            <img src="images/menu-gallery/he.jpg" />
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallery-heading hidden-xs color-bg" style="width: 50%; float:right;">
+                            <h2 class="section-title">Have A Look On Our Brands</h2>
+                        </div>
+                        
+                    </div> <!-- /.row -->
+                </div> <!-- /.container-fluid -->
+            </div> <!-- /.wrapper -->
+        </section>
+
+        <!--== 15. Reserve A Table! ==-->
+        <section id="reserve" class="reserve">
+            <div class="wrapper">
+                <div class="container-fluid">
+                    <div class="row dis-table">
+                        <div class="col-xs-6 col-sm-6 dis-table-cell color-bg">
+                            <h2 class="section-title">Check New Arrival Above !</h2>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 dis-table-cell section-bg">
+                            
+                        </div>
+                    </div> <!-- /.dis-table -->
+                </div> <!-- /.row -->
+            </div> <!-- /.wrapper -->
+        </section> <!-- /#reserve -->
+
+        <section id="contact" class="contact">
+            <div class="container-fluid color-bg">
+                <div class="row dis-table">
+                    <div class="hidden-xs col-sm-6 dis-table-cell">
+                        <h2 class="section-title">Contact With us</h2>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 dis-table-cell">
+                        <div class="section-content">
+                            <p>karachi</p>
+                            <p>03357531096</p>
+                            <p>ahmadalps890@gmail.com </p>
+                        </div>
+                    </div>
+                </div>
+            
+        </section>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div id="map-canvas"></div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                        <div class="copyright text-center">
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mixitup.min.js" ></script>
+        <script src="js/wow.min.js"></script>
+        <script type="text/javascript" src="js/jquery.hoverdir.js"></script>
+        <script type="text/javascript" src="js/jQuery.scrollSpeed.js"></script>
+        <script src="js/script.js"></script>
+    
+    </body>
+</html>
